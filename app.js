@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function (_e) {
         console.log('[Service Worker] Fetched resource '+e.request.url);
     });
 
-    self.addEventListener('fetch', (e) => {
+    /*self.addEventListener('fetch', (e) => {
         e.respondWith(
             caches.match(e.request).then((r) => {
                 console.log('[Service Worker] Fetching resource: '+e.request.url);
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function (_e) {
                 });
             })
         );
-    });
+    });*/
 
 
     /******************************************************************
